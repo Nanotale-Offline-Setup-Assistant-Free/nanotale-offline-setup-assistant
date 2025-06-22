@@ -1,0 +1,264 @@
+# Site settings
+title: "Nanotale Offline Setup Assistant"
+description: "Complete offline installation guide for Nanotale: Typing Chronicles. No Steam required! Transform your typing skills into magical adventures."
+url: "https://nanotale-offline-setup-assistant-free.github.io"
+baseurl: "/nanotale-offline-setup-assistant"
+
+# Author information
+author:
+  name: "Nanotale Setup Assistant Team"
+  email: "support@nanotale-setup.com"
+  url: "https://github.com/Nanotale-Offline-Setup-Assistant-Free"
+
+# Repository information
+repository: "Nanotale-Offline-Setup-Assistant-Free/nanotale-offline-setup-assistant"
+github_username: "Nanotale-Offline-Setup-Assistant-Free"
+
+# SEO and social media
+lang: "en-US"
+twitter:
+  username: "nanotaletyping"
+  card: "summary_large_image"
+
+social:
+  name: "Nanotale Setup Assistant"
+  links:
+    - "https://github.com/Nanotale-Offline-Setup-Assistant-Free/nanotale-offline-setup-assistant"
+    - "https://discord.gg/nanotale"
+    - "https://twitter.com/nanotaletyping"
+
+# Theme and appearance
+theme: minima
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Plugin settings
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: true
+
+optional_front_matter:
+  enabled: true
+
+readme_index:
+  enabled: true
+  remove_originals: false
+
+relative_links:
+  enabled: true
+  collections: true
+
+# Markdown processing
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Installation"
+    url: "/installation-guide/"
+  - title: "Troubleshooting"
+    url: "/troubleshooting/"
+  - title: "Community"
+    url: "https://discord.gg/nanotale"
+  - title: "GitHub"
+    url: "https://github.com/Nanotale-Offline-Setup-Assistant-Free/nanotale-offline-setup-assistant"
+
+# Footer links
+footer_links:
+  - title: "Download"
+    url: "https://nanotale-offline-setup-assistant-free.github.io/nanotale-offline-setup-assistant"
+    icon: "fas fa-download"
+  - title: "Discord"
+    url: "https://discord.gg/nanotale"
+    icon: "fab fa-discord"
+  - title: "GitHub"
+    url: "https://github.com/Nanotale-Offline-Setup-Assistant-Free/nanotale-offline-setup-assistant"
+    icon: "fab fa-github"
+  - title: "Twitter"
+    url: "https://twitter.com/nanotaletyping"
+    icon: "fab fa-twitter"
+
+# Build settings
+incremental: true
+safe: true
+lsi: false
+excerpt_separator: "\n\n"
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: [html, head, body]
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - "*.tmp"
+  - "*.bak"
+  - README.md
+  - LICENSE
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - CHANGELOG.md
+  - .gitignore
+  - .internal/
+
+# Include specific files
+include:
+  - .htaccess
+  - _pages
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Google Analytics (if needed)
+# google_analytics: "UA-XXXXXXXX-X"
+
+# SEO settings
+logo: "/assets/images/nanotale-logo.png"
+social_image: "/assets/images/nanotale-social-preview.png"
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Date format
+date_format: "%B %-d, %Y"
+
+# Timezone
+timezone: "UTC"
+
+# Encoding
+encoding: "utf-8"
+
+# Liquid settings
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# Comments (if using Disqus)
+# disqus:
+#   shortname: "nanotale-setup-assistant"
+
+# Search (if using Algolia)
+# algolia:
+#   application_id: "YOUR_APPLICATION_ID"
+#   index_name: "nanotale_docs"
+#   search_only_api_key: "YOUR_SEARCH_ONLY_API_KEY"
+
+# Custom variables
+custom:
+  version: "2.1.0"
+  download_url: "https://nanotale-offline-setup-assistant-free.github.io/nanotale-offline-setup-assistant"
+  discord_invite: "https://discord.gg/nanotale"
+  game_name: "Nanotale: Typing Chronicles"
+  project_name: "Nanotale Offline Setup Assistant"
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      show_excerpts: false
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      show_date: true
+      show_excerpts: true
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "default"
+      sidebar:
+        nav: "docs"
+
+# Conversion settings
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Serving
+detach: false
+port: 4000
+host: 127.0.0.1
+show_dir_listing: false
+
+# Outputting
+permalink: /:categories/:year/:month/:day/:title:output_ext
+paginate_path: /page:num/
+timezone: null
+
+quiet: false
+verbose: false
+defaults: []
+
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# Markdown processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: "1..6"
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  input: GFM
+  hard_wrap: false
+  guess_lang: true
+  footnote_nr: 1
+  show_warnings: false 

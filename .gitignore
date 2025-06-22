@@ -1,0 +1,573 @@
+# 🚫 Nanotale Offline Setup Assistant - .gitignore
+
+# ============================
+# 🔐 SECURITY - Never commit!
+# ============================
+.internal/GITHUB_CREDENTIALS.md
+.internal/
+credentials.json
+secrets.json
+*.key
+*.pem
+*.p12
+*.pfx
+token.txt
+password.txt
+
+# ============================
+# 🖥️ Operating System Files
+# ============================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================
+# 💻 Development Tools
+# ============================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================
+# 🏗️ Build Outputs
+# ============================
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.tmp
+*.temp
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================
+# 📦 Package Files
+# ============================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bz2
+*.xz
+*.gz
+*.tgz
+*.tar
+*.deb
+*.rpm
+*.msi
+*.apk
+*.ipa
+
+# ============================
+# 📊 Logs and Temp Files
+# ============================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+logs/
+temp/
+tmp/
+
+# ============================
+# 🧪 Testing
+# ============================
+coverage/
+*.cover
+.hypothesis/
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.coveragerc
+test-results.xml
+
+# ============================
+# 🌐 Web Development
+# ============================
+.sass-cache/
+.css.map
+.js.map
+bower_components/
+.grunt/
+.gulp/
+
+# ============================
+# 🎮 Game Development
+# ============================
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
+*.unitypackage
+*.app
+
+# Unreal Engine
+Binaries/
+Intermediate/
+Saved/
+.vs/
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+
+# ============================
+# 🔧 Configuration Files
+# ============================
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuration
+config.json
+settings.json
+appsettings.json
+appsettings.*.json
+
+# ============================
+# 📚 Documentation Build
+# ============================
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+docs/_site/
+docs/.sass-cache/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+
+# ============================  
+# 🗄️ Database Files
+# ============================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ============================
+# 📱 Mobile Development
+# ============================
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+local.properties
+proguard/
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+DerivedData/
+*.xcuserstate
+*.xcworkspace
+
+# ============================
+# ☁️ Cloud & Deployment
+# ============================
+# Firebase
+.firebase/
+firebase-debug.log
+.firebaserc
+
+# Heroku
+.env
+Procfile
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# ============================
+# 🔍 Analysis Tools
+# ============================
+# SonarQube
+.sonarqube/
+.sonar/
+
+# ESLint
+.eslintcache
+
+# StyleCop
+StyleCopReport.xml
+
+# ============================
+# 🎨 Design Files
+# ============================
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xd
+*.indd
+
+# ============================
+# 🎵 Media Files (Large)
+# ============================
+# Uncomment if repository gets too large
+# *.mp4
+# *.avi
+# *.mkv
+# *.mov
+# *.wmv
+# *.mp3
+# *.wav
+# *.flac
+# *.ogg
+
+# ============================
+# 📈 Analytics & Tracking
+# ============================
+# Google Analytics
+ga.js
+analytics.js
+gtag.js
+
+# ============================
+# 🧹 Cleanup Scripts
+# ============================
+cleanup.bat
+cleanup.sh
+reset.bat
+reset.sh
+
+# ============================
+# 🚧 Work in Progress
+# ============================
+WIP/
+TODO/
+DRAFT/
+EXPERIMENTAL/
+BACKUP/
+OLD/
+
+# ============================
+# 📝 Editor Files
+# ============================
+*.swp
+*.swo
+*~
+.viminfo
+.*.sw?
+
+# ============================
+# 🎯 Project Specific
+# ============================
+# Setup Assistant specific
+setup-logs/
+installation-cache/
+download-cache/
+user-settings.json
+install-state.json
+error-reports/
+
+# Game files (if included)
+game-files/
+nanotale-game/
+game-cache/
+save-backups/
+
+# ============================
+# 📦 Distribution
+# ============================
+# Exclude built installers from repo
+releases/
+dist/
+installers/
+packages/
+setup-*.exe
+setup-*.msi
+nanotale-setup-*.zip
+
+# ============================
+# 🔒 Security Scanning
+# ============================
+# Security scan results
+security-report.json
+vulnerability-report.json
+dependency-check-report.html
+
+# ============================
+# 📊 Performance
+# ============================
+# Performance test results
+benchmark-results/
+performance-logs/
+profiling-data/
+
+# ============================
+# 🌍 Localization
+# ============================
+# Translation files (if auto-generated)
+*.mo
+*.po~
+*.pot~
+
+# ============================
+# 📱 Social Media
+# ============================
+# Generated social media previews
+social-previews/
+og-images/
+
+# ============================
+# 🎪 Temporary GitHub Actions
+# ============================
+# GitHub Actions artifacts
+.github/workflows/artifacts/
+
+# ============================
+# 🔧 IDE Configurations
+# ============================
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ============================
+# 📊 Metrics
+# ============================
+# Code coverage
+coverage.info
+lcov.info
+coverage/
+
+# ============================
+# 🎮 Game Modding
+# ============================
+# Mod files
+mods/
+modding-tools/
+game-mods/
+
+# ============================
+# 📚 Auto-generated Docs
+# ============================
+# API documentation
+api-docs/
+generated-docs/
+
+# ============================
+# 🏗️ Build Systems
+# ============================
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# ============================
+# 🔄 Version Control
+# ============================
+# Git
+*.orig
+*.rej
+.gitattributes.bak
+
+# SVN
+.svn/
+
+# Mercurial
+.hg/
+.hgignore
+
+# ============================
+# 📦 Packaging
+# ============================
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# npm
+package-lock.json
+yarn.lock
+.pnp
+.pnp.js
+
+# ============================
+# 🚀 Deployment
+# ============================
+# Netlify
+.netlify/
+
+# Vercel
+.vercel/
+
+# AWS
+.aws/
+.serverless/
+
+# ============================
+# 📈 Monitoring
+# ============================
+# Logs
+*.log
+logs/
+*.log.*
+
+# Error reports
+error-*.json
+crash-*.dmp
+
+# ============================
+# 🎨 Assets (if too large)
+# ============================
+# Uncomment if assets become too large
+# assets/videos/
+# assets/audio/
+# assets/high-res/
+
+# ============================
+# 🧪 Testing Artifacts
+# ============================
+# Test results
+TestResults/
+test-results/
+*.trx
+*.runsettings
+
+# ============================
+# 📱 Mobile Certificates
+# ============================
+# iOS
+*.mobileprovision
+*.cer
+*.p12
+
+# Android
+*.keystore
+*.jks
+key.properties
+
+# ============================
+# 🔐 Encryption Keys
+# ============================
+# Never commit any keys!
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+private_key*
+public_key*
+
+# ============================
+# 🎯 Custom Project Files
+# ============================
+# Add your custom ignores here
+.custom/
+local-config.json
+development.json
+
+# ============================
+# 📝 End of .gitignore
+# ============================
+# Remember to review and update this file as the project grows! 
